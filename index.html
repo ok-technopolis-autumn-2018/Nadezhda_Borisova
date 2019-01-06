@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Todo MVC</title>
     <link rel="stylesheet" href="../homeworktodo/styles/default.css" />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="todos.js"></script>
 </head>
 <body>
 
@@ -89,12 +91,13 @@
         </div>
 
         <div class="todos-toolbar">
-            <div class="todos-toolbar_unready-counter">3 items left</div>
+            <div class="todos-toolbar_unready-counter">
+                <span class="digit">3</span> items left</div>
 
             <div class="filters todos-toolbar_filters">
                 <button class="filters-item_selected" aria-label="Filter: All, is selected">All</button>
-                <button class="filters-item" aria-label="Filter: Active">Active</button>
-                <button class="filters-item" aria-label="Filter: Completed">Completed</button>
+                <button class="filters-item active" aria-label="Filter: Active">Active</button>
+                <button class="filters-item completed" aria-label="Filter: Completed">Completed</button>
             </div>
 
             <button class="todos-toolbar_clear-completed">Clear completed</button>
